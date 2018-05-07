@@ -35,3 +35,17 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 ### Support or Contact
 
 Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+
+```sequence
+participant 客户端
+participant 服务器
+participant 通行证中心
+Note over 客户端: 用户输入通行证的账号、密码
+客户端->通行证中心: 发送账号、密码
+Note over 通行证中心: 验证账号、密码
+通行证中心-->>客户端: 返回token
+客户端->服务器: 发送token
+服务器->通行证中心: 验证token
+通行证中心-->>服务器: 验证成功
+服务器-->>客户端: 登陆成功
+```
