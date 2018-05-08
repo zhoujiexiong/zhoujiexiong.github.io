@@ -55,3 +55,12 @@ foo | bar
 ----|-----
 1 | 2
 4 | 5
+
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+
+73925bf5e8b58b32a0d3ac0b55ba17153cc63a46
