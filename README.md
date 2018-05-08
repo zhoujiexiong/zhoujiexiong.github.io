@@ -50,6 +50,7 @@ def get_order_commissions(self):
 
 
 ~~table~~
+
 foo | bar 
 ----|-----
 1 | 2
