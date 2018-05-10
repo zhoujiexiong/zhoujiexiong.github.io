@@ -85,6 +85,7 @@ Content in the first column | Content in the second column
   {% for post in site.posts %}
      <li>
        <a href="{{ post.url }}">{{ post.title }}</a>
+       {{ post.excerpt }}
      </li>
   {% endfor %}
 </ul>
