@@ -45,6 +45,17 @@ def get_order_commissions(self):
     }
 ```
 
+```json
+{
+      "status": "refused | done",
+      # 以下信息会置于 transfer_res/manual 字段下
+      "transfer_account": "1234-2345-3456-4567",
+      "foo": "bar",
+}
+
+```
+
+
 - [x] todo1
 - [x] todo2
 
@@ -70,8 +81,8 @@ Content in the first column | Content in the second column
 
 <ul>
   {% for post in site.posts %}
-      <li>
-            <a href="{{ post.url }}">{{ post.title }}</a>
-	        </li>
-		  {% endfor %}
+     <li>
+       <a href="{{ post.url }}">{{ post.title }}</a>
+     </li>
+  {% endfor %}
 </ul>
