@@ -1,4 +1,4 @@
-# code less, thing more
+# code less, think more
 
 ## Welcome to GitHub Pages
 
