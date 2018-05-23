@@ -15,7 +15,7 @@ tags: GOF23 GRASP OODP
 
 Purpose | Desgin Pettern | Aspect(s) that can vary
 --------|----------------|------------------------
-Creational | Abstract Factory(87) | families of product object
+Creational | Abstract Factory(87) | families of product objects
            | Builder(97) | how a composite object gets created
            | Factory Method(107) | subclass of object that is instantiated
            | Prototype(117) | clsss of object that is instantiated
@@ -23,7 +23,7 @@ Creational | Abstract Factory(87) | families of product object
  Structural | Adapter(139) | interface to an object
             | Bridge(151) | implementation of an object
             | Composite(163) | structure and composition of an object
-            | Decorator(173) | responsibility of and object without subclass
+            | Decorator(175) | responsibility of an object without subclass
             | Facade(185) | interface to a subsystem
             | Flyweight(195) | storage costs of objects
             | Proxy(207) | how an object is accessed; its location
