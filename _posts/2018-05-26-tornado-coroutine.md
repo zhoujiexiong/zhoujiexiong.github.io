@@ -1,9 +1,16 @@
 ---
 layout: post
 title:  "Tornado Coroutine 实现理解"
-date:   2018-05-26 20:00:30 +0800
+date:   2018-05-24 20:00:30 +0800
 categories: python tornado coroutine
+tags: python tornado coroutine generator future
 ---
+
+<ul>
+{% for tag in page.tags %}
+<li><a href="#">{{ tag }}</a></li>
+{% endfor %}
+</ul>
 
 ## Overview
 在 coroutine 上下文中，将 generator 返回的 future 添加至 io_loop（through add_future with Runner.run as callback function invoked by Future.set_result），并在 Runner.run 中再以 gen.send(future.res) 或 gen.throw(future.exc) 方法获得下一个 future 并再添加至 io_loop。以这种方式达到循环调用 generator 的效果直至其返回(raise gen.Return)或运行结束(raise StopIteration)。接着在 coroutine 结束之前使用 result_future.set_result 方法通知本 coroutine 的 caller(如果有的话)，使其重新被调度运行。
